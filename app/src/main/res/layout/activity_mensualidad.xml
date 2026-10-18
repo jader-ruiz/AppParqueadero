@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8F9FA"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUEVA MENSUALIDAD"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etPlacaMensual"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="PLACA DEL VEHÍCULO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Teléfono (Opcional)"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:inputType="phone"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="FECHA DE INICIO: (TOCA PARA CAMBIAR)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnGuardarMensual"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="GUARDAR"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVolverMensual"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="VOLVER AL MENÚ PRINCIPAL"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

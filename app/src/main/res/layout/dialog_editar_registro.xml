@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTituloDialogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDITAR REGISTRO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etEditarPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="PLACA"
+        android:inputType="textCapCharacters"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Estos dos solo se mostrarán si es una Mensualidad -->
+    <EditText
+        android:id="@+id/etEditarTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="TELÉFONO"
+        android:inputType="phone"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvEditarFecha"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="INICIO: (Tocar para cambiar)"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="#F0F0F0"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnEliminarEdicion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ELIMINAR PLACA DEL SISTEMA"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancelarEdicion"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="CANCELAR"
+            android:backgroundTint="#9E9E9E"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnGuardarEdicion"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="GUARDAR"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>
